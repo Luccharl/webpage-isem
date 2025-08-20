@@ -1,0 +1,309 @@
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Poppins, sans-serif;
+    line-height: 1.6;
+  }
+
+  h1 h2 h3{
+    font-family: "Source Serif 4", serif;
+  }
+
+  h2{
+    font-size: 2.5rem;
+  }
+
+  h3{
+    font-size: 2rem;
+  }
+
+  .logo{
+    font-family: "Potta One", system-ui;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    color: black;
+    padding: 1rem;
+  }
+
+  span {
+    color: #F5B963;
+  }
+
+  nav a {
+    color: black;
+    margin: 0 0.5rem;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+
+  /*.subscribe-btn {*/
+  /*  background: #e67e22;*/
+  /*  color: white;*/
+  /*  border: none;*/
+  /*  padding: 0.5rem 1rem;*/
+  /*  cursor: pointer;*/
+  /*}*/
+
+  .banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .banner-text {
+    background: #000000 ;
+    color: white;
+    padding: 6rem 7rem;
+    text-align: center;
+  }
+
+  .banner-image {
+    background: url('../img/pic1.jpg') no-repeat center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+
+  .explore, .offers {
+    padding: 5rem 15rem;
+    text-align: center;
+  }
+  .explore-grid {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+
+  .card {
+    background-color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 0;
+    transition: transform 0.2s ease;
+    color: #ffffff;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card h2 {
+    margin-top: 0;
+  }
+
+  .card p {
+    margin: 10px 0;
+  }
+
+  .price {
+    font-weight: bold;
+  }
+
+  .reviews {
+    font-size: 0.9em;
+  }
+
+  .offer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+  }
+
+  .offer-item {
+    background-color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .offer-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .offer-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #0078D4;
+    border-radius: 100%;
+  }
+
+  .offer-title {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .offer-description {
+    font-size: 1em;
+    color: #555;
+  }
+
+  .feature {
+    background: url('/img/pic2.jpg') no-repeat center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    color: white;
+    text-align: center;
+    padding: 0;
+  }
+
+  .feature-text {
+    background: rgba(0, 0, 0, 0.3);
+    padding:7rem;
+  }
+
+  .mission-vision {
+    text-align: center;
+    gap: 0;
+    padding: 0;
+    margin: 1rem 0 0 0;
+  }
+
+  .mission {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-right: 4rem;
+    height: 425px;
+  }
+
+  .mission-text {
+    margin-top: 9rem;
+    padding-left: 8.5rem;
+  }
+
+  .vision {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 4rem;
+    height: 425px;
+  }
+
+  .vision-text {
+    margin-top: 9rem;
+    padding-right: 8.5rem;
+  }
+
+  .gallery {
+    gap: 0;
+    margin: 0;
+    padding: 0 0 0 0;
+  }
+
+  .gallery-text {
+    padding: 9rem 4rem 4rem 9rem;
+  }
+
+  .slideshow-container {
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  .slideshow {
+    max-width: 800px;
+    height: 535px;
+    position: relative;
+    margin: auto;
+  }
+
+  .slideshow > .mySlides > img {
+    width: 100%;
+    height: 535px;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+  .clients{
+    padding: 5rem 15rem;
+    text-align: left;
+  }
+
+  .clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 2rem;
+  }
+
+  .clients-item {
+    background-color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+
+  .clients-item:hover {
+    transform: translateY(-5px);
+  }
+
+  .clients-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #0078D4;
+    border-radius: 100%;
+  }
+
+  .clients-title {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+
+  .clients-description {
+    font-size: 1em;
+    color: #555;
+  }
+
+  footer {
+    background: #2c3e50;
+    color: white;
+    padding: 1rem 0 1.5rem 0;
+    text-align: center;
+  }
+
+  footer p {
+    margin-top: 0.5rem;
+  }
+
+  footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+  }
+
+  .subscribe-form input {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+  }
+
