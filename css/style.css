@@ -155,7 +155,7 @@
   }
 
   .feature {
-    background: url('../img/1.jpg') no-repeat center;
+    background: url('../img/vig.jpg') no-repeat center;
     background-size: cover;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -306,4 +306,6 @@
     padding: 0.5rem;
     margin-right: 0.5rem;
   }
+
+
 
